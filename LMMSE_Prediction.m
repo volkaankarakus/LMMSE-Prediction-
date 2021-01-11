@@ -34,7 +34,7 @@ quantized8bit=floor(data*(1-eps)*2^K)/2^K;
                                % yatay olması icin transra;
 
 %% Prediction
-%N1=16 alinirsa ve 17 degeri tahmin edeceksek :
+%N1=128 alinirsa ve 129. degeri tahmin edeceksek :
 % predictdata=a(1).x[n-1]+a(2).x[n-2]....a(k).x[n-k]
 predictdata=(aHatX')*quantized8bit; % N1+1'inci tahmini degeri buldum. 
 %% Error Hesabı
